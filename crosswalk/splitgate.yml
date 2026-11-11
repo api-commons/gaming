@@ -1,0 +1,14 @@
+provider: splitgate
+apis_io: https://apis.io/providers/splitgate/
+context: gaming
+generated: '2026-11-11'
+concepts:
+  player_profile:
+    path_segment:
+    - players
+    properties:
+      player_id: playerId
+      username: displayName
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/splitgate-third-party-openapi-original.yml#GET /v1/search/players

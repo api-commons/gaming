@@ -1,0 +1,477 @@
+context: gaming
+name: Gaming
+generated: '2026-11-11'
+version: 0.1.0-draft.20261111
+status: draft
+cohort:
+  tags:
+  - Gaming
+  - Video Games
+  - Game Development
+  - Game Servers
+  - Esports
+  - Game Backend
+  providers_with_harvested_openapi: 73
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates: {}
+shared_specs: {}
+concepts:
+  game_title:
+    segments_seen:
+      games: 13
+      game: 4
+      titles: 3
+    providers_exposing: 15
+    providers_with_readable_schema: 14
+    operations:
+    - operation: GET collection
+      providers: 14
+      share: 0.933
+      tier: core
+    - operation: GET item
+      providers: 6
+      share: 0.4
+      tier: extended
+    - operation: POST collection
+      providers: 5
+      share: 0.333
+      tier: extended
+    - operation: DELETE item
+      providers: 1
+      share: 0.067
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.067
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 1
+      share: 0.067
+      tier: long-tail
+    properties:
+    - name: name
+      tier: core
+      providers: 8
+      share: 0.571
+      type: string
+      spellings:
+      - name
+      - title
+    - name: id
+      tier: core
+      providers: 7
+      share: 0.5
+      type: integer
+      spellings:
+      - id
+      - game_id
+    - name: platforms
+      tier: extended
+      providers: 5
+      share: 0.357
+      type: array
+      spellings:
+      - platforms
+      - platform
+    - name: release_date
+      tier: extended
+      providers: 4
+      share: 0.286
+      type: string
+      spellings:
+      - first_release_date
+      - release_date
+      - released
+    - name: slug
+      tier: extended
+      providers: 4
+      share: 0.286
+      type: string
+      spellings:
+      - slug
+    - name: status
+      tier: extended
+      providers: 4
+      share: 0.286
+      type: integer
+      spellings:
+      - status
+      - state
+    - name: genres
+      tier: extended
+      providers: 3
+      share: 0.214
+      type: array
+      spellings:
+      - genres
+      - genre
+    - name: rating
+      tier: extended
+      providers: 3
+      share: 0.214
+      type: number
+      spellings:
+      - rating
+    - name: updated_at
+      tier: extended
+      providers: 3
+      share: 0.214
+      type: string
+      spellings:
+      - updated
+      - updated_at
+      - updatedAt
+    - name: url
+      tier: extended
+      providers: 3
+      share: 0.214
+      type: string
+      spellings:
+      - url
+      - URL
+    long_tail_count: 149
+    long_tail_sample:
+    - category
+    - character_id
+    - cover
+    - created_at
+    - description
+    - end_time
+    - grantable_roles
+    - grantable_roles_at_base
+    - grantable_roles_at_hq
+    - grantable_roles_at_other
+    - rating_count
+    - roles
+    - roles_at_base
+    - roles_at_hq
+    - roles_at_other
+    - screenshots
+    - storyline
+    - summary
+    - title_id
+    - achievements_count
+    - added
+    - added_by_status
+    - additions_count
+    - aggregated_rating
+    - aggregated_rating_count
+    - alternative_names
+    - api_status
+    - archived
+    - artworks
+    - assets
+    - audio_asset_id
+    - audio_url
+    - background_image
+    - background_image_additional
+    - bing_search
+    - bing_search_claim
+    - black
+    - box_art_url
+    - category_id
+    - children
+  player_profile:
+    segments_seen:
+      players: 6
+      player: 2
+    providers_exposing: 7
+    providers_with_readable_schema: 6
+    operations:
+    - operation: GET collection
+      providers: 6
+      share: 0.857
+      tier: core
+    - operation: GET item
+      providers: 4
+      share: 0.571
+      tier: core
+    - operation: POST item
+      providers: 2
+      share: 0.286
+      tier: long-tail
+    - operation: DELETE item
+      providers: 1
+      share: 0.143
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 1
+      share: 0.143
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 4
+      share: 0.667
+      type: string
+      spellings:
+      - id
+      - '@id'
+    - name: player_id
+      tier: core
+      providers: 4
+      share: 0.667
+      type: string
+      spellings:
+      - player_id
+      - playerId
+    - name: name
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - name
+      - title
+    - name: username
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - username
+      - displayName
+      - playerName
+    long_tail_count: 76
+    long_tail_sample:
+    - country
+    - age
+    - attributes
+    - available_slots
+    - avatar
+    - avatar_url
+    - backhand
+    - balances
+    - banned
+    - banned_reason
+    - career_high_date
+    - career_high_rank
+    - career_summary
+    - country_code
+    - country_name
+    - created_at
+    - creator_program_id
+    - current_rank
+    - current_rank_points
+    - custom_attributes
+    - custom_attributes_from_deeplink
+    - disabled
+    - dob
+    - email
+    - external_ids
+    - fide
+    - first_name
+    - followers
+    - full_name
+    - grand_slam_titles
+    - hand
+    - has_next
+    - has_prev
+    - height_cm
+    - host_id
+    - ioc
+    - is_active
+    - is_locked
+    - is_private
+    - is_streamer
+  leaderboard:
+    segments_seen:
+      leaderboards: 8
+      leaderboard: 7
+      rankings: 1
+    providers_exposing: 15
+    providers_with_readable_schema: 12
+    operations:
+    - operation: GET collection
+      providers: 14
+      share: 0.933
+      tier: core
+    - operation: GET item
+      providers: 6
+      share: 0.4
+      tier: extended
+    - operation: DELETE item
+      providers: 4
+      share: 0.267
+      tier: extended
+    - operation: POST collection
+      providers: 3
+      share: 0.2
+      tier: extended
+    - operation: UPDATE item
+      providers: 3
+      share: 0.2
+      tier: extended
+    - operation: POST item
+      providers: 2
+      share: 0.133
+      tier: long-tail
+    properties:
+    - name: id
+      tier: extended
+      providers: 5
+      share: 0.417
+      type: string
+      spellings:
+      - id
+      - leaderboardId
+      - leaderboard_id
+    - name: rank
+      tier: extended
+      providers: 5
+      share: 0.417
+      type: string
+      spellings:
+      - rank
+      - position
+    - name: created_at
+      tier: extended
+      providers: 4
+      share: 0.333
+      type: string
+      spellings:
+      - create_time
+      - createTime
+      - created
+      - createdAt
+    - name: name
+      tier: extended
+      providers: 4
+      share: 0.333
+      type: string
+      spellings:
+      - name
+      - title
+    - name: score
+      tier: extended
+      providers: 4
+      share: 0.333
+      type: string
+      spellings:
+      - score
+    - name: updated_at
+      tier: extended
+      providers: 4
+      share: 0.333
+      type: string
+      spellings:
+      - updateTime
+      - update_time
+      - updated
+      - updatedAt
+    long_tail_count: 76
+    long_tail_sample:
+    - description
+    - expiry_time
+    - kills
+    - metadata
+    - num_score
+    - owner_id
+    - sort_order
+    - subscore
+    - user_id
+    - user_name
+    - username
+    - victory_points
+    - authoritative
+    - bucket_size
+    - category
+    - distributor_id
+    - duration
+    - end_active
+    - end_at
+    - end_date
+    - end_time
+    - gameplays
+    - gameplays_threshold
+    - has_next
+    - has_prev
+    - icon_url
+    - image_asset_id
+    - image_asset_url
+    - image_icon_asset_id
+    - image_icon_asset_url
+    - image_small_asset_id
+    - image_small_asset_url
+    - image_urls
+    - is_verified
+    - items
+    - join_required
+    - last_updated_at
+    - league
+    - max_num_score
+    - max_size
+  achievement:
+    segments_seen:
+      achievements: 5
+    providers_exposing: 5
+    providers_with_readable_schema: 5
+    operations:
+    - operation: GET collection
+      providers: 5
+      share: 1.0
+      tier: core
+    - operation: DELETE item
+      providers: 1
+      share: 0.2
+      tier: long-tail
+    - operation: GET item
+      providers: 1
+      share: 0.2
+      tier: long-tail
+    - operation: POST collection
+      providers: 1
+      share: 0.2
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.2
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 1
+      share: 0.2
+      tier: long-tail
+    properties:
+    - name: name
+      tier: core
+      providers: 4
+      share: 0.8
+      type: string
+      spellings:
+      - name
+    - name: description
+      tier: core
+      providers: 3
+      share: 0.6
+      type: string
+      spellings:
+      - description
+    - name: id
+      tier: core
+      providers: 3
+      share: 0.6
+      type: string
+      spellings:
+      - id
+    long_tail_count: 16
+    long_tail_sample:
+    - image
+    - type
+    - achievement_identifier
+    - award_points
+    - created_at
+    - game_plays
+    - icon
+    - image_url
+    - last_updated
+    - level
+    - one_time
+    - percent
+    - position
+    - status
+    - tiered
+    - unlocked_at

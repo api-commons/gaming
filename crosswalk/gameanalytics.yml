@@ -1,0 +1,17 @@
+provider: gameanalytics
+apis_io: https://apis.io/providers/gameanalytics/
+context: gaming
+generated: '2026-11-11'
+concepts:
+  game_title:
+    path_segment:
+    - games
+    properties:
+      name: name
+      id: id
+      platforms: platform
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/gameanalytics-openapi.yml#GET /api/v1/games
+    - openapi/_original/gameanalytics-openapi.yml#GET /api/v1/games/{game_id}
+    - openapi/_original/gameanalytics-openapi.yml#POST /api/v1/games

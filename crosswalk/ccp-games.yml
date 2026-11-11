@@ -1,0 +1,22 @@
+provider: ccp-games
+apis_io: https://apis.io/providers/ccp-games/
+context: gaming
+generated: '2026-11-11'
+concepts:
+  game_title:
+    path_segment:
+    - titles
+    properties:
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/ccp-games-esi-openapi-original.json#GET /characters/{character_id}/titles
+    - openapi/_original/ccp-games-esi-openapi-original.json#GET /corporations/{corporation_id}/members/titles
+    - openapi/_original/ccp-games-esi-openapi-original.json#GET /corporations/{corporation_id}/titles
+  leaderboard:
+    path_segment:
+    - leaderboards
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/ccp-games-esi-openapi-original.json#GET /fw/leaderboards

@@ -1,0 +1,12 @@
+provider: gamesight
+apis_io: https://apis.io/providers/gamesight/
+context: gaming
+generated: '2026-11-11'
+concepts:
+  game_title:
+    path_segment:
+    - games
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/gamesight-reporting-openapi.json#GET /games

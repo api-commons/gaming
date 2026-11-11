@@ -1,0 +1,1839 @@
+{
+ "cohort_size": 73,
+ "unreadable": [],
+ "concepts": {
+  "game_title": {
+   "beamable": {
+    "segments": [
+     "game",
+     "games"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "secret": "string",
+     "parent": "string",
+     "children": "array",
+     "projectName": "string",
+     "archived": "boolean",
+     "cid": "integer",
+     "pid": "string",
+     "sharded": "boolean",
+     "result": "string",
+     "data": "object",
+     "gameName": "string"
+    },
+    "evidence": [
+     "openapi/_original/beamable-leaderboards-openapi.yml#GET /basic/realms/game",
+     "openapi/_original/beamable-leaderboards-openapi.yml#GET /basic/realms/games",
+     "openapi/_original/beamable-leaderboards-openapi.yml#POST /basic/realms/game",
+     "openapi/_original/beamable-leaderboards-openapi.yml#PUT /basic/realms/game"
+    ]
+   },
+   "ccp-games": {
+    "segments": [
+     "titles"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "name": "string",
+     "title_id": "integer",
+     "character_id": "integer",
+     "titles": "array",
+     "grantable_roles": "array",
+     "grantable_roles_at_base": "array",
+     "grantable_roles_at_hq": "array",
+     "grantable_roles_at_other": "array",
+     "roles": "array",
+     "roles_at_base": "array",
+     "roles_at_hq": "array",
+     "roles_at_other": "array"
+    },
+    "evidence": [
+     "openapi/_original/ccp-games-esi-openapi-original.json#GET /characters/{character_id}/titles",
+     "openapi/_original/ccp-games-esi-openapi-original.json#GET /corporations/{corporation_id}/members/titles",
+     "openapi/_original/ccp-games-esi-openapi-original.json#GET /corporations/{corporation_id}/titles"
+    ]
+   },
+   "chess-com": {
+    "segments": [
+     "games"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "url": "string",
+     "pgn": "string",
+     "time_control": "string",
+     "end_time": "integer",
+     "rated": "boolean",
+     "fen": "string",
+     "time_class": "string",
+     "rules": "string",
+     "white": "object",
+     "black": "object"
+    },
+    "evidence": [
+     "openapi/_original/chess-com-published-data-api-openapi.yml#GET /player/{username}/games"
+    ]
+   },
+   "citoapi": {
+    "segments": [
+     "games",
+     "titles"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "success": "boolean",
+     "data": "object",
+     "meta": "object"
+    },
+    "evidence": [
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/games/{gameId}",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/matches/{matchId}/games",
+     "openapi/_original/citoapi-v1-openapi.json#GET /raf/titles/{titleKey}"
+    ]
+   },
+   "curse": {
+    "segments": [
+     "games"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "slug": "string",
+     "dateModified": "string",
+     "assets": "object",
+     "status": "integer",
+     "apiStatus": "integer",
+     "supportedFeatures": "object"
+    },
+    "evidence": [
+     "openapi/_original/curse-openapi.json#GET /v1/games",
+     "openapi/_original/curse-openapi.json#GET /v1/games/{gameId}"
+    ]
+   },
+   "eve-online": {
+    "segments": [
+     "titles"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "name": "string",
+     "title_id": "integer",
+     "character_id": "integer",
+     "titles": "array",
+     "grantable_roles": "array",
+     "grantable_roles_at_base": "array",
+     "grantable_roles_at_hq": "array",
+     "grantable_roles_at_other": "array",
+     "roles": "array",
+     "roles_at_base": "array",
+     "roles_at_hq": "array",
+     "roles_at_other": "array"
+    },
+    "evidence": [
+     "openapi/_original/eve-online-openapi.yml#GET /characters/{character_id}/titles/",
+     "openapi/_original/eve-online-openapi.yml#GET /corporations/{corporation_id}/members/titles/",
+     "openapi/_original/eve-online-openapi.yml#GET /corporations/{corporation_id}/titles/",
+     "openapi/_original/swagger.json#GET /v1/characters/{character_id}/titles/",
+     "openapi/_original/swagger.json#GET /v1/corporations/{corporation_id}/members/titles/",
+     "openapi/_original/swagger.json#GET /v1/corporations/{corporation_id}/titles/",
+     "openapi/_original/swagger_2.json#GET /characters/{character_id}/titles/",
+     "openapi/_original/swagger_2.json#GET /corporations/{corporation_id}/members/titles/",
+     "openapi/_original/swagger_2.json#GET /corporations/{corporation_id}/titles/",
+     "openapi/_original/swagger_3.json#GET /characters/{character_id}/titles/",
+     "openapi/_original/swagger_3.json#GET /corporations/{corporation_id}/members/titles/",
+     "openapi/_original/swagger_3.json#GET /corporations/{corporation_id}/titles/"
+    ]
+   },
+   "freetogame": {
+    "segments": [
+     "games",
+     "game"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "title": "string",
+     "thumbnail": "string",
+     "short_description": "string",
+     "game_url": "string",
+     "genre": "string",
+     "platform": "string",
+     "publisher": "string",
+     "developer": "string",
+     "release_date": "string",
+     "freetogame_profile_url": "string",
+     "status": "string",
+     "description": "string",
+     "minimum_system_requirements": "object",
+     "screenshots": "array"
+    },
+    "evidence": [
+     "openapi/_original/freetogame-openapi.yml#GET /game",
+     "openapi/_original/freetogame-openapi.yml#GET /games"
+    ]
+   },
+   "gameanalytics": {
+    "segments": [
+     "games"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "studio_id": "integer",
+     "platform": "string",
+     "game_key": "string",
+     "secret_key": "string"
+    },
+    "evidence": [
+     "openapi/_original/gameanalytics-openapi.yml#GET /api/v1/games",
+     "openapi/_original/gameanalytics-openapi.yml#GET /api/v1/games/{game_id}",
+     "openapi/_original/gameanalytics-openapi.yml#POST /api/v1/games"
+    ]
+   },
+   "gamesight": {
+    "segments": [
+     "games"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/gamesight-reporting-openapi.json#GET /games"
+    ]
+   },
+   "giantbomb": {
+    "segments": [
+     "games",
+     "game"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "error": "string",
+     "limit": "integer",
+     "offset": "integer",
+     "number_of_page_results": "integer",
+     "number_of_total_results": "integer",
+     "status_code": "integer",
+     "results": null
+    },
+    "evidence": [
+     "openapi/_original/openapi.json#GET /game/{guid}/",
+     "openapi/_original/openapi.json#GET /games/"
+    ]
+   },
+   "hypixel": {
+    "segments": [
+     "games"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "success": "boolean",
+     "lastUpdated": "number",
+     "games": "object"
+    },
+    "evidence": [
+     "openapi/_original/hypixel-public-api-openapi.json#GET /v2/resources/games",
+     "openapi/_original/hypixel-public-api-openapi.yml#GET /v2/resources/games"
+    ]
+   },
+   "igdb": {
+    "segments": [
+     "games"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "slug": "string",
+     "summary": "string",
+     "storyline": "string",
+     "rating": "number",
+     "rating_count": "integer",
+     "first_release_date": "integer",
+     "cover": "integer",
+     "genres": "array",
+     "platforms": "array",
+     "url": "string"
+    },
+    "evidence": [
+     "openapi/_original/igdb-openapi.yml#POST /games"
+    ]
+   },
+   "rawg": {
+    "segments": [
+     "games"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "slug": "string",
+     "name": "string",
+     "released": "string",
+     "tba": "boolean",
+     "background_image": "string",
+     "rating": "number",
+     "rating_top": "integer",
+     "ratings": "object",
+     "ratings_count": "integer",
+     "reviews_text_count": "string",
+     "added": "integer",
+     "added_by_status": "object",
+     "metacritic": "integer",
+     "playtime": "integer",
+     "suggestions_count": "integer",
+     "updated": "string",
+     "esrb_rating": "object",
+     "platforms": "array",
+     "name_original": "string",
+     "description": "string",
+     "metacritic_platforms": "array",
+     "background_image_additional": "string",
+     "website": "string",
+     "reactions": "object",
+     "screenshots_count": "integer",
+     "movies_count": "integer",
+     "creators_count": "integer",
+     "achievements_count": "integer",
+     "parent_achievements_count": "string",
+     "reddit_url": "string",
+     "reddit_name": "string",
+     "reddit_description": "string",
+     "reddit_logo": "string",
+     "reddit_count": "integer",
+     "twitch_count": "string",
+     "youtube_count": "string",
+     "alternative_names": "array",
+     "metacritic_url": "string",
+     "parents_count": "integer",
+     "additions_count": "integer",
+     "game_series_count": "integer"
+    },
+    "evidence": [
+     "openapi/_original/rawg-openapi.json#GET /games",
+     "openapi/_original/rawg-openapi.json#GET /games/{id}",
+     "openapi/_original/rawg-openapi.yml#GET /games",
+     "openapi/_original/rawg-openapi.yml#GET /games/{id}"
+    ]
+   },
+   "twitch": {
+    "segments": [
+     "games"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "game_id": "string",
+     "URL": "string",
+     "type": "string",
+     "date_range": "object",
+     "id": "string",
+     "name": "string",
+     "box_art_url": "string",
+     "igdb_id": "string",
+     "slug": "string",
+     "summary": "string",
+     "storyline": "string",
+     "rating": "number",
+     "rating_count": "integer",
+     "aggregated_rating": "number",
+     "aggregated_rating_count": "integer",
+     "total_rating": "number",
+     "total_rating_count": "integer",
+     "first_release_date": "integer",
+     "category": "integer",
+     "status": "integer",
+     "genres": "array",
+     "platforms": "array",
+     "themes": "array",
+     "cover": "integer",
+     "screenshots": "array",
+     "artworks": "array",
+     "videos": "array",
+     "involved_companies": "array",
+     "franchises": "array",
+     "collection": "integer",
+     "similar_games": "array",
+     "url": "string",
+     "created_at": "integer",
+     "updated_at": "integer"
+    },
+    "evidence": [
+     "openapi/_original/twitch-drops-openapi.yml#GET /analytics/games",
+     "openapi/_original/twitch-helix-openapi.yml#GET /games",
+     "openapi/_original/twitch-igdb-openapi.yml#POST /games",
+     "openapi/_original/twitch-insights-analytics-openapi.yml#GET /analytics/games"
+    ]
+   },
+   "versusgame": {
+    "segments": [
+     "games",
+     "game"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "state": null,
+     "winningSide": null,
+     "stats": "object",
+     "gameType": null,
+     "language": null,
+     "orientation": null,
+     "correctAnswer": null,
+     "id": "string",
+     "creatorId": "string",
+     "creator": "object",
+     "version": "number",
+     "startTime": "string",
+     "lastJoinTime": "string",
+     "endTime": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "slushing": "object",
+     "resultChanged": "boolean",
+     "hostEarnings": "number",
+     "isPendingResult": "boolean",
+     "isFinalResult": "boolean",
+     "votePercentageSideA": "number",
+     "votePercentageSideB": "number",
+     "gameTitle": "string",
+     "isAd": "boolean",
+     "isPrivate": "boolean",
+     "bingSearch": "string",
+     "bingSearchClaim": "string",
+     "metadata": "object",
+     "questionVideoUrls": "object",
+     "landscapeVideoUrls": "object",
+     "sideA": "string",
+     "sideB": "string",
+     "sourceUrl": "string",
+     "text": "string",
+     "videoUrls": "object",
+     "resultUrls": "object",
+     "categoryId": "string",
+     "category": "object",
+     "urls": "array",
+     "audioAssetId": "string",
+     "videoAssetId": "string",
+     "questionVideoAssetId": "string",
+     "landscapeVideoAssetId": "string",
+     "uploadUrl": "string",
+     "resourceUrl": "string",
+     "audioUrl": "string",
+     "resultAssetId": "string"
+    },
+    "evidence": [
+     "openapi/_original/versusgame-openapi-original.json#DELETE /v1/creator/games/{gameId}",
+     "openapi/_original/versusgame-openapi-original.json#GET /v1/admin/games",
+     "openapi/_original/versusgame-openapi-original.json#GET /v1/admin/games/{gameId}",
+     "openapi/_original/versusgame-openapi-original.json#GET /v1/creator/games",
+     "openapi/_original/versusgame-openapi-original.json#GET /v1/creator/games/{gameId}",
+     "openapi/_original/versusgame-openapi-original.json#PATCH /v1/admin/games/{gameId}",
+     "openapi/_original/versusgame-openapi-original.json#PATCH /v1/creator/games/{gameId}",
+     "openapi/_original/versusgame-openapi-original.json#POST /autogame/article/drafts/{id}/game_index/{gameIndex}/game",
+     "openapi/_original/versusgame-openapi-original.json#POST /autogame/game",
+     "openapi/_original/versusgame-openapi-original.json#POST /v1/admin/games",
+     "openapi/_original/versusgame-openapi-original.json#POST /v1/creator/games",
+     "openapi/_original/versusgame-openapi-original.json#POST /v2/autogame/article/drafts/{draftId}/game"
+    ]
+   }
+  },
+  "player_profile": {
+   "aghanim": {
+    "segments": [
+     "players"
+    ],
+    "operations": [
+     "GET item",
+     "POST item"
+    ],
+    "properties": {
+     "attributes": "object",
+     "custom_attributes": "object",
+     "id": "string",
+     "player_id": "string",
+     "loyalty_points": "integer",
+     "name": "string",
+     "email": "string",
+     "country": "string",
+     "banned": "boolean",
+     "banned_reason": "string",
+     "avatar_url": "string",
+     "segments": "array",
+     "creator_program_id": "string",
+     "registration_marketplace": "string",
+     "balances": "array",
+     "marketing_consent": "object",
+     "custom_attributes_from_deeplink": "object"
+    },
+    "evidence": [
+     "openapi/_original/aghanim-openapi-original.json#GET /v1/players/{player_id}",
+     "openapi/_original/aghanim-openapi-original.json#POST /v1/players/{player_id}"
+    ]
+   },
+   "chess-com": {
+    "segments": [
+     "player",
+     "players"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "@id": "string",
+     "url": "string",
+     "username": "string",
+     "player_id": "integer",
+     "title": "string",
+     "status": "string",
+     "name": "string",
+     "avatar": "string",
+     "location": "string",
+     "country": "string",
+     "joined": "integer",
+     "last_online": "integer",
+     "followers": "integer",
+     "is_streamer": "boolean",
+     "twitch_url": "string",
+     "fide": "integer",
+     "players": "array"
+    },
+    "evidence": [
+     "openapi/_original/chess-com-published-data-api-openapi.yml#GET /country/{iso}/players",
+     "openapi/_original/chess-com-published-data-api-openapi.yml#GET /player/{username}"
+    ]
+   },
+   "citoapi": {
+    "segments": [
+     "players"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "items": "array",
+     "total": "integer",
+     "page": "integer",
+     "page_size": "integer",
+     "total_pages": "integer",
+     "has_next": "boolean",
+     "has_prev": "boolean",
+     "id": "string",
+     "tour": "string",
+     "first_name": "string",
+     "last_name": "string",
+     "full_name": "string",
+     "ioc": null,
+     "country_code": null,
+     "portrait_url": null,
+     "portrait_attribution": null,
+     "portrait_license": null,
+     "portrait_source_url": null,
+     "country_name": null,
+     "nationality": null,
+     "hand": null,
+     "backhand": null,
+     "dob": null,
+     "height_cm": null,
+     "weight_kg": null,
+     "turned_pro": null,
+     "career_high_rank": null,
+     "career_high_date": null,
+     "current_rank": null,
+     "titles_count": null,
+     "grand_slam_titles": null,
+     "is_active": "boolean",
+     "age": null,
+     "weeks_at_no_1": null,
+     "current_rank_points": null,
+     "career_summary": "object",
+     "surface_breakdown": null
+    },
+    "evidence": [
+     "openapi/_original/citoapi-v1-openapi.json#GET /cod/players",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cod/players/{id}",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/matches/{matchId}/players",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/players",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/players/{playerIdOrSlug}",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/stats/players",
+     "openapi/_original/citoapi-v1-openapi.json#GET /dota2/players",
+     "openapi/_original/citoapi-v1-openapi.json#GET /fortnite/players",
+     "openapi/_original/citoapi-v1-openapi.json#GET /fortnite/players/{identifier}",
+     "openapi/_original/citoapi-v1-openapi.json#GET /tennis/players",
+     "openapi/_original/citoapi-v1-openapi.json#GET /tennis/players/batch",
+     "openapi/_original/citoapi-v1-openapi.json#GET /tennis/players/{player_id}"
+    ]
+   },
+   "hypixel": {
+    "segments": [
+     "player"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "success": "boolean",
+     "player": "object"
+    },
+    "evidence": [
+     "openapi/_original/hypixel-public-api-openapi.json#GET /v2/player",
+     "openapi/_original/hypixel-public-api-openapi.yml#GET /v2/player"
+    ]
+   },
+   "pandascore": {
+    "segments": [
+     "players"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/pandascore-openapi.yml#GET /players"
+    ]
+   },
+   "splitgate": {
+    "segments": [
+     "players"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "playerId": "string",
+     "displayName": "string"
+    },
+    "evidence": [
+     "openapi/_original/splitgate-third-party-openapi-original.yml#GET /v1/search/players"
+    ]
+   },
+   "unity": {
+    "segments": [
+     "players"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST item"
+    ],
+    "properties": {
+     "key": "string",
+     "value": null,
+     "writeLock": "string",
+     "created": "string",
+     "modified": "string",
+     "playerId": "string",
+     "playerName": "string",
+     "rank": "integer",
+     "score": "number",
+     "tier": "string",
+     "updatedTime": "string",
+     "metadata": "string",
+     "id": "string",
+     "name": "string",
+     "lobbyCode": "string",
+     "isPrivate": "boolean",
+     "isLocked": "boolean",
+     "maxPlayers": "integer",
+     "availableSlots": "integer",
+     "hostId": "string",
+     "data": "object",
+     "players": "array",
+     "lastUpdated": "string",
+     "externalIds": "array",
+     "disabled": "boolean",
+     "lastLoginDate": "string",
+     "createdAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/unity-cloud-save-openapi.yml#GET /v1/data/projects/{projectId}/players/{playerId}",
+     "openapi/_original/unity-leaderboards-openapi.yml#GET /v1/projects/{projectId}/environments/{environmentId}/leaderboards/{leaderboardId}/scores/players/{playerId}",
+     "openapi/_original/unity-leaderboards-openapi.yml#POST /v1/projects/{projectId}/environments/{environmentId}/leaderboards/{leaderboardId}/scores/players/{playerId}",
+     "openapi/_original/unity-lobby-openapi.yml#DELETE /v1/lobbies/{lobbyId}/players/{playerId}",
+     "openapi/_original/unity-lobby-openapi.yml#PATCH /v1/lobbies/{lobbyId}/players/{playerId}",
+     "openapi/_original/unity-player-authentication-openapi.yml#DELETE /v1/players/{playerId}",
+     "openapi/_original/unity-player-authentication-openapi.yml#GET /v1/players",
+     "openapi/_original/unity-player-authentication-openapi.yml#GET /v1/players/{playerId}"
+    ]
+   }
+  },
+  "leaderboard": {
+   "aghanim": {
+    "segments": [
+     "leaderboards"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "name": "string",
+     "description": "string",
+     "visibility": "string",
+     "start_at": "integer",
+     "end_at": "integer",
+     "id": "string"
+    },
+    "evidence": [
+     "openapi/_original/aghanim-openapi-original.json#DELETE /v1/leaderboards/{leaderboard_id}",
+     "openapi/_original/aghanim-openapi-original.json#GET /v1/leaderboards",
+     "openapi/_original/aghanim-openapi-original.json#GET /v1/leaderboards/{leaderboard_id}",
+     "openapi/_original/aghanim-openapi-original.json#POST /v1/leaderboards",
+     "openapi/_original/aghanim-openapi-original.json#PUT /v1/leaderboards/{leaderboard_id}"
+    ]
+   },
+   "ccp-games": {
+    "segments": [
+     "leaderboards"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "kills": "object",
+     "victory_points": "object"
+    },
+    "evidence": [
+     "openapi/_original/ccp-games-esi-openapi-original.json#GET /fw/leaderboards"
+    ]
+   },
+   "chess-com": {
+    "segments": [
+     "leaderboards"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/chess-com-published-data-api-openapi.yml#GET /leaderboards"
+    ]
+   },
+   "citoapi": {
+    "segments": [
+     "rankings",
+     "leaderboards"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "ranking_date": "string",
+     "tour": "string",
+     "items": "array",
+     "total": "integer",
+     "page": "integer",
+     "page_size": "integer",
+     "total_pages": "integer",
+     "has_next": "boolean",
+     "has_prev": "boolean",
+     "success": "boolean",
+     "data": "array",
+     "meta": "object"
+    },
+    "evidence": [
+     "openapi/_original/citoapi-v1-openapi.json#GET /bkfc/rankings",
+     "openapi/_original/citoapi-v1-openapi.json#GET /bkfc/rankings/{division}",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/leaderboards/{metric}",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/rankings",
+     "openapi/_original/citoapi-v1-openapi.json#GET /cs2/teams/rankings",
+     "openapi/_original/citoapi-v1-openapi.json#GET /fortnite/pros/rankings",
+     "openapi/_original/citoapi-v1-openapi.json#GET /tennis/rankings",
+     "openapi/_original/citoapi-v1-openapi.json#GET /tennis/rankings/{circuit}",
+     "openapi/_original/citoapi-v1-openapi.json#GET /ufc/rankings"
+    ]
+   },
+   "eve-online": {
+    "segments": [
+     "leaderboards"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "kills": "object",
+     "victory_points": "object"
+    },
+    "evidence": [
+     "openapi/_original/eve-online-openapi.yml#GET /fw/leaderboards/",
+     "openapi/_original/swagger.json#GET /v1/fw/leaderboards/",
+     "openapi/_original/swagger_2.json#GET /fw/leaderboards/",
+     "openapi/_original/swagger_3.json#GET /fw/leaderboards/",
+     "openapi/_original/swagger_4.json#GET /v1/fw/leaderboards/",
+     "openapi/_original/swagger_5.json#GET /v1/fw/leaderboards/",
+     "openapi/_original/swagger_6.json#GET /fw/leaderboards/"
+    ]
+   },
+   "gala-games": {
+    "segments": [
+     "leaderboard"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/gala-games-defi-backend-openapi.json#GET /competition/{id}/leaderboard",
+     "openapi/_original/gala-games-defi-backend-openapi.json#GET /leaderboard"
+    ]
+   },
+   "heroiclabs": {
+    "segments": [
+     "leaderboard"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST item"
+    ],
+    "properties": {
+     "id": "string",
+     "title": "string",
+     "description": "string",
+     "category": "integer",
+     "sort_order": "integer",
+     "size": "integer",
+     "max_size": "integer",
+     "max_num_score": "integer",
+     "operator": "integer",
+     "end_active": "integer",
+     "reset_schedule": "string",
+     "metadata": "string",
+     "create_time": "string",
+     "start_time": "string",
+     "end_time": "string",
+     "duration": "integer",
+     "start_active": "integer",
+     "join_required": "boolean",
+     "authoritative": "boolean",
+     "tournament": "boolean",
+     "prev_reset": "integer",
+     "next_reset": "integer",
+     "leaderboardId": "string",
+     "ownerId": "string",
+     "username": "string",
+     "score": "string",
+     "subscore": "string",
+     "numScore": "integer",
+     "createTime": "string",
+     "updateTime": "string",
+     "expiryTime": "string",
+     "rank": "string",
+     "maxNumScore": "integer"
+    },
+    "evidence": [
+     "openapi/_original/heroiclabs-nakama-console-api-openapi.yml#DELETE /v2/console/leaderboard/{id}",
+     "openapi/_original/heroiclabs-nakama-console-api-openapi.yml#GET /v2/console/leaderboard",
+     "openapi/_original/heroiclabs-nakama-console-api-openapi.yml#GET /v2/console/leaderboard/{id}",
+     "openapi/_original/heroiclabs-nakama-console-openapi-original.json#DELETE /v2/console/leaderboard/{id}",
+     "openapi/_original/heroiclabs-nakama-console-openapi-original.json#GET /v2/console/leaderboard",
+     "openapi/_original/heroiclabs-nakama-console-openapi-original.json#GET /v2/console/leaderboard/{id}",
+     "openapi/_original/heroiclabs-nakama-openapi-original.json#DELETE /v2/leaderboard/{leaderboardId}",
+     "openapi/_original/heroiclabs-nakama-openapi-original.json#GET /v2/leaderboard/{leaderboardId}",
+     "openapi/_original/heroiclabs-nakama-openapi-original.json#POST /v2/leaderboard/{leaderboardId}"
+    ]
+   },
+   "highrise": {
+    "segments": [
+     "leaderboard"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "world_id": "string",
+     "name": "string",
+     "icon_url": "string",
+     "image_urls": "array",
+     "rank": null
+    },
+    "evidence": [
+     "openapi/_original/highrise-openapi.json#GET /api/leaderboard"
+    ]
+   },
+   "hypixel": {
+    "segments": [
+     "leaderboards"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "success": "boolean",
+     "leaderboards": "object"
+    },
+    "evidence": [
+     "openapi/_original/hypixel-public-api-openapi.json#GET /v2/leaderboards",
+     "openapi/_original/hypixel-public-api-openapi.yml#GET /v2/leaderboards"
+    ]
+   },
+   "lucra-sports": {
+    "segments": [
+     "leaderboard"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "userId": "string",
+     "userName": "object",
+     "userMetadata": "object",
+     "userAvatarUrl": "object",
+     "position": "number",
+     "positionOverride": "object",
+     "score": "object",
+     "lastUpdatedAt": "object"
+    },
+    "evidence": [
+     "openapi/_original/lucra-sports-forge-openapi.json#GET /api/tournaments/{id}/leaderboard"
+    ]
+   },
+   "nakama": {
+    "segments": [
+     "leaderboard"
+    ],
+    "operations": [
+     "GET item",
+     "POST item"
+    ],
+    "properties": {
+     "leaderboard_id": "string",
+     "owner_id": "string",
+     "username": "string",
+     "score": "string",
+     "subscore": "string",
+     "num_score": "integer",
+     "metadata": "string",
+     "create_time": "string",
+     "update_time": "string",
+     "expiry_time": "string",
+     "rank": "string"
+    },
+    "evidence": [
+     "openapi/_original/nakama-openapi.yml#GET /v2/leaderboard/{leaderboard_id}",
+     "openapi/_original/nakama-openapi.yml#POST /v2/leaderboard/{leaderboard_id}"
+    ]
+   },
+   "open-poker": {
+    "segments": [
+     "leaderboard"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/open-poker-openapi.json#GET /api/competitions/{competition_id}/leaderboard",
+     "openapi/_original/open-poker-openapi.json#GET /api/season/leaderboard",
+     "openapi/_original/open-poker-openapi.json#GET /api/season/{season_id}/leaderboard"
+    ]
+   },
+   "twitch": {
+    "segments": [
+     "leaderboard"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "user_id": "string",
+     "user_login": "string",
+     "user_name": "string",
+     "rank": "integer",
+     "score": "integer"
+    },
+    "evidence": [
+     "openapi/_original/twitch-helix-openapi.yml#GET /bits/leaderboard"
+    ]
+   },
+   "unity": {
+    "segments": [
+     "leaderboards"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "sortOrder": "string",
+     "bucketSize": "number",
+     "resetConfig": "object",
+     "tieringConfig": "object",
+     "created": "string",
+     "updated": "string"
+    },
+    "evidence": [
+     "openapi/_original/unity-leaderboards-openapi.yml#DELETE /v1/projects/{projectId}/environments/{environmentId}/leaderboards/{leaderboardId}",
+     "openapi/_original/unity-leaderboards-openapi.yml#GET /v1/projects/{projectId}/environments/{environmentId}/leaderboards",
+     "openapi/_original/unity-leaderboards-openapi.yml#GET /v1/projects/{projectId}/environments/{environmentId}/leaderboards/{leaderboardId}",
+     "openapi/_original/unity-leaderboards-openapi.yml#POST /v1/projects/{projectId}/environments/{environmentId}/leaderboards",
+     "openapi/_original/unity-leaderboards-openapi.yml#PUT /v1/projects/{projectId}/environments/{environmentId}/leaderboards/{leaderboardId}"
+    ]
+   },
+   "versusgame": {
+    "segments": [
+     "leaderboards"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "state": null,
+     "league": null,
+     "id": "string",
+     "prizeName": "string",
+     "prizeType": "string",
+     "prizeValue": "number",
+     "imageAssetId": "string",
+     "imageAssetUrl": "string",
+     "startDate": "string",
+     "endDate": "string",
+     "prizeDrawingDate": "string",
+     "pointThreshold": "number",
+     "numberOfPrizes": "number",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "distributorId": "string",
+     "version": "number",
+     "isVerified": "boolean",
+     "prizeNameShort": "string",
+     "imageSmallAssetId": "string",
+     "imageSmallAssetUrl": "string",
+     "imageIconAssetId": "string",
+     "imageIconAssetUrl": "string",
+     "prizeTitle": "string",
+     "prizeShortTitle": "string",
+     "maxUsersThreshold": "number",
+     "playerCount": "number",
+     "gameplays": "number",
+     "gameplaysThreshold": "number",
+     "revenueThreshold": "number",
+     "override": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/versusgame-openapi-original.json#DELETE /v1/admin/leaderboards/{leaderboardId}",
+     "openapi/_original/versusgame-openapi-original.json#GET /v1/admin/leaderboards",
+     "openapi/_original/versusgame-openapi-original.json#GET /v1/admin/leaderboards/{leaderboardId}",
+     "openapi/_original/versusgame-openapi-original.json#GET /v1/leaderboards/{leaderboardId}",
+     "openapi/_original/versusgame-openapi-original.json#PATCH /v1/admin/leaderboards/{leaderboardId}",
+     "openapi/_original/versusgame-openapi-original.json#POST /v1/admin/leaderboards"
+    ]
+   }
+  },
+  "achievement": {
+   "aghanim": {
+    "segments": [
+     "achievements"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "name": "string",
+     "description": "string",
+     "image_url": "string",
+     "type": null,
+     "position": "integer",
+     "id": "string"
+    },
+    "evidence": [
+     "openapi/_original/aghanim-openapi-original.json#DELETE /v1/achievements/{achievement_id}",
+     "openapi/_original/aghanim-openapi-original.json#GET /v1/achievements",
+     "openapi/_original/aghanim-openapi-original.json#GET /v1/achievements/{achievement_id}",
+     "openapi/_original/aghanim-openapi-original.json#PATCH /v1/achievements",
+     "openapi/_original/aghanim-openapi-original.json#POST /v1/achievements",
+     "openapi/_original/aghanim-openapi-original.json#PUT /v1/achievements/{achievement_id}"
+    ]
+   },
+   "hypixel": {
+    "segments": [
+     "achievements"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "success": "boolean",
+     "lastUpdated": "number",
+     "achievements": "object",
+     "one_time": "object",
+     "tiered": "object"
+    },
+    "evidence": [
+     "openapi/_original/hypixel-public-api-openapi.json#GET /v2/resources/achievements",
+     "openapi/_original/hypixel-public-api-openapi.json#GET /v2/resources/guilds/achievements",
+     "openapi/_original/hypixel-public-api-openapi.yml#GET /v2/resources/achievements",
+     "openapi/_original/hypixel-public-api-openapi.yml#GET /v2/resources/guilds/achievements"
+    ]
+   },
+   "rawg": {
+    "segments": [
+     "achievements"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "description": "string",
+     "image": "string",
+     "percent": "string"
+    },
+    "evidence": [
+     "openapi/_original/rawg-openapi.json#GET /games/{id}/achievements",
+     "openapi/_original/rawg-openapi.yml#GET /games/{id}/achievements"
+    ]
+   },
+   "sidequest": {
+    "segments": [
+     "achievements"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "achievement_identifier": "string",
+     "name": "string",
+     "description": "object",
+     "image": "string",
+     "icon": "object",
+     "status": "string",
+     "created_at": "string",
+     "unlocked_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/sidequest-openapi.json#GET /v2/users/{route_users_id}/apps/{apps_id}/achievements"
+    ]
+   },
+   "versusgame": {
+    "segments": [
+     "achievements"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "type": null,
+     "level": null,
+     "awardPoints": "number",
+     "gamePlays": "number"
+    },
+    "evidence": [
+     "openapi/_original/versusgame-openapi-original.json#GET /v1/achievements"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "accelbyte",
+    "aghanim",
+    "amiibo",
+    "appcharge",
+    "b3",
+    "beamable",
+    "blizzard-entertainment",
+    "blockade-games",
+    "blocklottos-com",
+    "carry1st",
+    "ccp-games",
+    "chess-com",
+    "citoapi",
+    "crob-at",
+    "curse",
+    "discord",
+    "dmarket",
+    "edgegap",
+    "epic-games",
+    "eve-online",
+    "freetogame",
+    "gala-games",
+    "gameanalytics",
+    "gameflip",
+    "gamesight",
+    "gameye",
+    "giantbomb",
+    "gzw-data",
+    "hathora",
+    "helika",
+    "heroiclabs",
+    "highrise",
+    "horizon-blockchain-games",
+    "hypixel",
+    "igdb",
+    "immutable",
+    "kaedim",
+    "kongregate",
+    "loot-rush-games",
+    "lootrush",
+    "lucra-sports",
+    "ludo-ai",
+    "nakama",
+    "neon-commerce",
+    "newminecraftservers",
+    "open-poker",
+    "pandascore",
+    "pokeapi",
+    "pokemon-tcg",
+    "proof-of-play",
+    "rawg",
+    "riot-games",
+    "roblox-engine-api",
+    "scryfall",
+    "sequence",
+    "sidequest",
+    "skinory",
+    "splitgate",
+    "sportradar",
+    "subspace",
+    "thesports",
+    "toornament",
+    "twitch",
+    "unity",
+    "upland",
+    "versusgame",
+    "voidpet",
+    "z-league"
+   ],
+   "kebab-case": [
+    "accelbyte",
+    "aghanim",
+    "appcharge",
+    "b3",
+    "beamable",
+    "blizzard-entertainment",
+    "blockade-games",
+    "blocklottos-com",
+    "ccp-games",
+    "chess-com",
+    "citoapi",
+    "crob-at",
+    "curse",
+    "discord",
+    "dmarket",
+    "edgegap",
+    "epic-games",
+    "gala-games",
+    "gameye",
+    "heroiclabs",
+    "highrise",
+    "immutable",
+    "lucra-sports",
+    "ludo-ai",
+    "neon-commerce",
+    "newminecraftservers",
+    "open-poker",
+    "pokeapi",
+    "rawg",
+    "riot-games",
+    "roblox-engine-api",
+    "scryfall",
+    "sidequest",
+    "sportradar",
+    "subspace",
+    "toornament",
+    "unity",
+    "upland",
+    "versusgame",
+    "z-league"
+   ],
+   "snake_case": [
+    "aghanim",
+    "blizzard-entertainment",
+    "ccp-games",
+    "eve-online",
+    "gala-games",
+    "gameanalytics",
+    "gameflip",
+    "gamesight",
+    "gzw-data",
+    "heroiclabs",
+    "highrise",
+    "hypixel",
+    "igdb",
+    "kongregate",
+    "sportradar",
+    "twitch",
+    "upland",
+    "versusgame"
+   ],
+   "other": [
+    "amazon-gamelift",
+    "blocklottos-com",
+    "citoapi",
+    "discord",
+    "dmarket",
+    "edgegap",
+    "gala-games",
+    "heroiclabs",
+    "highrise",
+    "kongregate",
+    "ludo-ai",
+    "open-poker",
+    "roblox-engine-api",
+    "unity",
+    "upland"
+   ],
+   "PascalCase": [
+    "gala-games",
+    "horizon-blockchain-games",
+    "photonengine",
+    "playfab",
+    "sequence",
+    "sportradar",
+    "steam",
+    "thegamesdb"
+   ],
+   "camelCase": [
+    "accelbyte",
+    "b3",
+    "beamable",
+    "blockade-games",
+    "gala-games",
+    "kaedim",
+    "versusgame"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "accelbyte",
+    "appcharge",
+    "b3",
+    "blockade-games",
+    "blocklottos-com",
+    "ccp-games",
+    "chess-com",
+    "citoapi",
+    "crob-at",
+    "discord",
+    "dmarket",
+    "edgegap",
+    "epic-games",
+    "eve-online",
+    "gala-games",
+    "gameanalytics",
+    "gameflip",
+    "gameye",
+    "giantbomb",
+    "gzw-data",
+    "heroiclabs",
+    "immutable",
+    "kongregate",
+    "lucra-sports",
+    "ludo-ai",
+    "nakama",
+    "neon-commerce",
+    "newminecraftservers",
+    "open-poker",
+    "pokeapi",
+    "pokemon-tcg",
+    "rawg",
+    "riot-games",
+    "roblox-engine-api",
+    "scryfall",
+    "sportradar",
+    "subspace",
+    "toornament",
+    "unity",
+    "upland",
+    "versusgame",
+    "z-league"
+   ],
+   "camelCase": [
+    "accelbyte",
+    "appcharge",
+    "b3",
+    "beamable",
+    "blizzard-entertainment",
+    "blockade-games",
+    "citoapi",
+    "crob-at",
+    "curse",
+    "epic-games",
+    "gala-games",
+    "hathora",
+    "heroiclabs",
+    "loot-rush-games",
+    "lootrush",
+    "lucra-sports",
+    "neon-commerce",
+    "pandascore",
+    "proof-of-play",
+    "riot-games",
+    "roblox-engine-api",
+    "splitgate",
+    "unity",
+    "upland",
+    "versusgame"
+   ],
+   "snake_case": [
+    "aghanim",
+    "b3",
+    "blocklottos-com",
+    "ccp-games",
+    "citoapi",
+    "discord",
+    "dmarket",
+    "edgegap",
+    "eve-online",
+    "gameanalytics",
+    "gamesight",
+    "heroiclabs",
+    "highrise",
+    "immutable",
+    "kongregate",
+    "nakama",
+    "open-poker",
+    "rawg",
+    "sidequest",
+    "sportradar",
+    "toornament"
+   ],
+   "PascalCase": [
+    "chess-com",
+    "dmarket",
+    "versusgame"
+   ],
+   "other": [
+    "appcharge",
+    "chess-com"
+   ],
+   "kebab-case": [
+    "chess-com"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "accelbyte",
+    "aghanim",
+    "amiibo",
+    "appcharge",
+    "b3",
+    "beamable",
+    "blizzard-entertainment",
+    "blockade-games",
+    "blocklottos-com",
+    "carry1st",
+    "ccp-games",
+    "citoapi",
+    "curse",
+    "discord",
+    "dmarket",
+    "edgegap",
+    "epic-games",
+    "eve-online",
+    "freetogame",
+    "gala-games",
+    "gameflip",
+    "gamesight",
+    "gameye",
+    "giantbomb",
+    "gzw-data",
+    "hathora",
+    "heroiclabs",
+    "highrise",
+    "hypixel",
+    "immutable",
+    "kaedim",
+    "kongregate",
+    "loot-rush-games",
+    "lootrush",
+    "lucra-sports",
+    "ludo-ai",
+    "nakama",
+    "neon-commerce",
+    "newminecraftservers",
+    "open-poker",
+    "pandascore",
+    "photonengine",
+    "pokeapi",
+    "pokemon-tcg",
+    "rawg",
+    "riot-games",
+    "roblox-engine-api",
+    "scryfall",
+    "sidequest",
+    "skinory",
+    "splitgate",
+    "sportradar",
+    "steam",
+    "subspace",
+    "thegamesdb",
+    "thesports",
+    "toornament",
+    "twitch",
+    "unity",
+    "upland",
+    "versusgame",
+    "z-league"
+   ],
+   "snake_case": [
+    "aghanim",
+    "amiibo",
+    "b3",
+    "blizzard-entertainment",
+    "blockade-games",
+    "blocklottos-com",
+    "ccp-games",
+    "citoapi",
+    "discord",
+    "edgegap",
+    "eve-online",
+    "gameflip",
+    "gamesight",
+    "giantbomb",
+    "heroiclabs",
+    "highrise",
+    "immutable",
+    "kongregate",
+    "ludo-ai",
+    "nakama",
+    "open-poker",
+    "pandascore",
+    "rawg",
+    "scryfall",
+    "sidequest",
+    "sportradar",
+    "steam",
+    "thegamesdb",
+    "thesports",
+    "toornament",
+    "twitch",
+    "unity",
+    "upland",
+    "z-league"
+   ],
+   "camelCase": [
+    "accelbyte",
+    "amiibo",
+    "appcharge",
+    "b3",
+    "beamable",
+    "blizzard-entertainment",
+    "carry1st",
+    "citoapi",
+    "curse",
+    "dmarket",
+    "epic-games",
+    "gala-games",
+    "gameye",
+    "hathora",
+    "heroiclabs",
+    "immutable",
+    "kaedim",
+    "loot-rush-games",
+    "lootrush",
+    "lucra-sports",
+    "neon-commerce",
+    "pokemon-tcg",
+    "roblox-engine-api",
+    "sidequest",
+    "unity",
+    "upland",
+    "versusgame",
+    "z-league"
+   ],
+   "other": [
+    "amiibo",
+    "dmarket",
+    "heroiclabs",
+    "steam",
+    "thegamesdb",
+    "versusgame"
+   ],
+   "PascalCase": [
+    "amazon-gamelift",
+    "curse",
+    "dmarket"
+   ],
+   "kebab-case": [
+    "freetogame"
+   ]
+  },
+  "pagination_param": {
+   "limit": [
+    "accelbyte",
+    "aghanim",
+    "amazon-gamelift",
+    "appcharge",
+    "b3",
+    "beamable",
+    "blockade-games",
+    "blocklottos-com",
+    "citoapi",
+    "discord",
+    "dmarket",
+    "edgegap",
+    "epic-games",
+    "gala-games",
+    "gameflip",
+    "gamesight",
+    "giantbomb",
+    "gzw-data",
+    "heroiclabs",
+    "highrise",
+    "lucra-sports",
+    "ludo-ai",
+    "nakama",
+    "neon-commerce",
+    "newminecraftservers",
+    "open-poker",
+    "pokeapi",
+    "roblox-engine-api",
+    "sidequest",
+    "splitgate",
+    "subspace",
+    "unity",
+    "upland",
+    "versusgame",
+    "z-league"
+   ],
+   "page": [
+    "appcharge",
+    "b3",
+    "beamable",
+    "ccp-games",
+    "citoapi",
+    "edgegap",
+    "eve-online",
+    "gala-games",
+    "gameye",
+    "highrise",
+    "hypixel",
+    "loot-rush-games",
+    "lootrush",
+    "newminecraftservers",
+    "pandascore",
+    "pokemon-tcg",
+    "rawg",
+    "riot-games",
+    "scryfall",
+    "thegamesdb",
+    "unity",
+    "versusgame"
+   ],
+   "offset": [
+    "accelbyte",
+    "aghanim",
+    "appcharge",
+    "b3",
+    "beamable",
+    "blockade-games",
+    "citoapi",
+    "discord",
+    "dmarket",
+    "gala-games",
+    "giantbomb",
+    "highrise",
+    "lucra-sports",
+    "open-poker",
+    "pokeapi",
+    "unity",
+    "versusgame",
+    "z-league"
+   ],
+   "page_size": [
+    "beamable",
+    "citoapi",
+    "curse",
+    "gameye",
+    "immutable",
+    "loot-rush-games",
+    "lootrush",
+    "ludo-ai",
+    "pokemon-tcg",
+    "rawg",
+    "upland",
+    "versusgame"
+   ],
+   "cursor": [
+    "dmarket",
+    "gamesight",
+    "heroiclabs",
+    "nakama",
+    "roblox-engine-api",
+    "unity",
+    "versusgame",
+    "z-league"
+   ],
+   "before": [
+    "b3",
+    "citoapi",
+    "discord",
+    "heroiclabs",
+    "subspace",
+    "twitch",
+    "upland"
+   ],
+   "after": [
+    "citoapi",
+    "discord",
+    "heroiclabs",
+    "twitch",
+    "unity",
+    "upland"
+   ],
+   "per_page": [
+    "loot-rush-games",
+    "lootrush",
+    "pandascore",
+    "unity"
+   ],
+   "size": [
+    "citoapi",
+    "gala-games",
+    "versusgame"
+   ],
+   "start": [
+    "kaedim",
+    "riot-games",
+    "versusgame"
+   ],
+   "count": [
+    "riot-games",
+    "steam",
+    "twitch"
+   ],
+   "skip": [
+    "sidequest",
+    "upland",
+    "versusgame"
+   ],
+   "starting_after": [
+    "aghanim",
+    "neon-commerce"
+   ],
+   "page_token": [
+    "roblox-engine-api"
+   ]
+  },
+  "property": {
+   "lower": [
+    "aghanim",
+    "beamable",
+    "ccp-games",
+    "chess-com",
+    "citoapi",
+    "curse",
+    "eve-online",
+    "freetogame",
+    "gameanalytics",
+    "giantbomb",
+    "heroiclabs",
+    "highrise",
+    "hypixel",
+    "igdb",
+    "lucra-sports",
+    "nakama",
+    "rawg",
+    "sidequest",
+    "twitch",
+    "unity",
+    "versusgame"
+   ],
+   "snake_case": [
+    "aghanim",
+    "ccp-games",
+    "chess-com",
+    "citoapi",
+    "eve-online",
+    "freetogame",
+    "gameanalytics",
+    "giantbomb",
+    "heroiclabs",
+    "highrise",
+    "hypixel",
+    "igdb",
+    "nakama",
+    "rawg",
+    "sidequest",
+    "twitch"
+   ],
+   "camelCase": [
+    "beamable",
+    "curse",
+    "heroiclabs",
+    "hypixel",
+    "lucra-sports",
+    "splitgate",
+    "unity",
+    "versusgame"
+   ],
+   "other": [
+    "chess-com"
+   ],
+   "PascalCase": [
+    "twitch"
+   ]
+  }
+ }
+}

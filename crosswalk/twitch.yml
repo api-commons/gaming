@@ -1,0 +1,38 @@
+provider: twitch
+apis_io: https://apis.io/providers/twitch/
+context: gaming
+generated: '2026-11-11'
+concepts:
+  game_title:
+    path_segment:
+    - games
+    properties:
+      name: name
+      id:
+      - game_id
+      - id
+      platforms: platforms
+      release_date: first_release_date
+      slug: slug
+      status: status
+      genres: genres
+      rating: rating
+      updated_at: updated_at
+      url:
+      - URL
+      - url
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/twitch-drops-openapi.yml#GET /analytics/games
+    - openapi/_original/twitch-helix-openapi.yml#GET /games
+    - openapi/_original/twitch-igdb-openapi.yml#POST /games
+    - openapi/_original/twitch-insights-analytics-openapi.yml#GET /analytics/games
+  leaderboard:
+    path_segment:
+    - leaderboard
+    properties:
+      rank: rank
+      score: score
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/twitch-helix-openapi.yml#GET /bits/leaderboard

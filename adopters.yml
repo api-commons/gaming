@@ -1,0 +1,149 @@
+context: gaming
+generated: '2026-11-11'
+adopters:
+- provider: aghanim
+  apis_io: https://apis.io/providers/aghanim/
+  crosswalk: crosswalk/aghanim.yml
+  concepts:
+  - achievement
+  - leaderboard
+  - player_profile
+- provider: beamable
+  apis_io: https://apis.io/providers/beamable/
+  crosswalk: crosswalk/beamable.yml
+  concepts:
+  - game_title
+- provider: ccp-games
+  apis_io: https://apis.io/providers/ccp-games/
+  crosswalk: crosswalk/ccp-games.yml
+  concepts:
+  - game_title
+  - leaderboard
+- provider: chess-com
+  apis_io: https://apis.io/providers/chess-com/
+  crosswalk: crosswalk/chess-com.yml
+  concepts:
+  - game_title
+  - leaderboard
+  - player_profile
+- provider: citoapi
+  apis_io: https://apis.io/providers/citoapi/
+  crosswalk: crosswalk/citoapi.yml
+  concepts:
+  - game_title
+  - leaderboard
+  - player_profile
+- provider: curse
+  apis_io: https://apis.io/providers/curse/
+  crosswalk: crosswalk/curse.yml
+  concepts:
+  - game_title
+- provider: eve-online
+  apis_io: https://apis.io/providers/eve-online/
+  crosswalk: crosswalk/eve-online.yml
+  concepts:
+  - game_title
+  - leaderboard
+- provider: freetogame
+  apis_io: https://apis.io/providers/freetogame/
+  crosswalk: crosswalk/freetogame.yml
+  concepts:
+  - game_title
+- provider: gala-games
+  apis_io: https://apis.io/providers/gala-games/
+  crosswalk: crosswalk/gala-games.yml
+  concepts:
+  - leaderboard
+- provider: gameanalytics
+  apis_io: https://apis.io/providers/gameanalytics/
+  crosswalk: crosswalk/gameanalytics.yml
+  concepts:
+  - game_title
+- provider: gamesight
+  apis_io: https://apis.io/providers/gamesight/
+  crosswalk: crosswalk/gamesight.yml
+  concepts:
+  - game_title
+- provider: giantbomb
+  apis_io: https://apis.io/providers/giantbomb/
+  crosswalk: crosswalk/giantbomb.yml
+  concepts:
+  - game_title
+- provider: heroiclabs
+  apis_io: https://apis.io/providers/heroiclabs/
+  crosswalk: crosswalk/heroiclabs.yml
+  concepts:
+  - leaderboard
+- provider: highrise
+  apis_io: https://apis.io/providers/highrise/
+  crosswalk: crosswalk/highrise.yml
+  concepts:
+  - leaderboard
+- provider: hypixel
+  apis_io: https://apis.io/providers/hypixel/
+  crosswalk: crosswalk/hypixel.yml
+  concepts:
+  - achievement
+  - game_title
+  - leaderboard
+  - player_profile
+- provider: igdb
+  apis_io: https://apis.io/providers/igdb/
+  crosswalk: crosswalk/igdb.yml
+  concepts:
+  - game_title
+- provider: lucra-sports
+  apis_io: https://apis.io/providers/lucra-sports/
+  crosswalk: crosswalk/lucra-sports.yml
+  concepts:
+  - leaderboard
+- provider: nakama
+  apis_io: https://apis.io/providers/nakama/
+  crosswalk: crosswalk/nakama.yml
+  concepts:
+  - leaderboard
+- provider: open-poker
+  apis_io: https://apis.io/providers/open-poker/
+  crosswalk: crosswalk/open-poker.yml
+  concepts:
+  - leaderboard
+- provider: pandascore
+  apis_io: https://apis.io/providers/pandascore/
+  crosswalk: crosswalk/pandascore.yml
+  concepts:
+  - player_profile
+- provider: rawg
+  apis_io: https://apis.io/providers/rawg/
+  crosswalk: crosswalk/rawg.yml
+  concepts:
+  - achievement
+  - game_title
+- provider: sidequest
+  apis_io: https://apis.io/providers/sidequest/
+  crosswalk: crosswalk/sidequest.yml
+  concepts:
+  - achievement
+- provider: splitgate
+  apis_io: https://apis.io/providers/splitgate/
+  crosswalk: crosswalk/splitgate.yml
+  concepts:
+  - player_profile
+- provider: twitch
+  apis_io: https://apis.io/providers/twitch/
+  crosswalk: crosswalk/twitch.yml
+  concepts:
+  - game_title
+  - leaderboard
+- provider: unity
+  apis_io: https://apis.io/providers/unity/
+  crosswalk: crosswalk/unity.yml
+  concepts:
+  - leaderboard
+  - player_profile
+- provider: versusgame
+  apis_io: https://apis.io/providers/versusgame/
+  crosswalk: crosswalk/versusgame.yml
+  concepts:
+  - achievement
+  - game_title
+  - leaderboard

@@ -1,0 +1,13 @@
+provider: gala-games
+apis_io: https://apis.io/providers/gala-games/
+context: gaming
+generated: '2026-11-11'
+concepts:
+  leaderboard:
+    path_segment:
+    - leaderboard
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/gala-games-defi-backend-openapi.json#GET /competition/{id}/leaderboard
+    - openapi/_original/gala-games-defi-backend-openapi.json#GET /leaderboard

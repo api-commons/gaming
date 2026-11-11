@@ -1,0 +1,56 @@
+context: gaming
+name: Gaming
+intro: >-
+  The common game-platform vocabulary -- the games, the players and their profiles, the
+  leaderboards and achievements they earn, and the matches they play -- distilled from the APIs that already exist.
+tags: [Gaming, Video Games, Game Development, Game Servers, Esports, Game Backend]
+
+envelope: [_links, _pagination, _results, data, success, errors, count, total, page, meta, links, response, results,
+           value, next, previous, has_more, message, page_info, cursor, total_count, per_page, total_pages, object]
+
+common_fields:
+  id: [uuid, guid, external_id, game_id]
+  created_at: [created, created_date, date_created, create_time, creation_date]
+  updated_at: [updated, modified_at, last_modified, update_time]
+  status: [state]
+  name: [title, display_name]
+
+concepts:
+  game_title:
+    path: /game-titles
+    segments: [games, game, titles, apps@gaming]
+    aliases:
+      genres: [genre, categories]
+      platforms: [platform]
+      release_date: [released, first_release_date, released_at]
+  player_profile:
+    path: /player-profiles
+    segments: [players, player, profiles@players|gaming, gamers, accounts@gaming]
+    aliases:
+      username: [gamertag, nickname, handle, display_name, player_name]
+      level: [xp_level, player_level]
+  leaderboard:
+    segments: [leaderboards, leaderboard, rankings, ranking]
+    aliases:
+      score: [value, points]
+      rank: [position, place]
+  achievement:
+    segments: [achievements, achievement, trophies, badges@gaming]
+    aliases:
+      description: [desc]
+      unlocked_at: [unlock_time, earned_at, achieved_at]
+  # game_match was measured and dropped: 7 readable providers agree only on id.
+
+findings:
+  - >-
+    Game platforms agree on the game title's id and name, and on player profiles' id, name and
+    username; player_id appears beside id at the same providers, the platform's key next to the game's own.
+  - >-
+    Leaderboards are widely exposed but share no core: rank reaches 42% and score 33%. Achievements
+    agree on name, description and id.
+decisions:
+  - >-
+    game_title, player_profile and game_match carry role names because game, player and match
+    collide with the sports context.
+  - >-
+    Matches and lobbies were measured and dropped; each game-server platform shapes a session its own way.

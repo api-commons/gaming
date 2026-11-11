@@ -1,0 +1,12 @@
+provider: pandascore
+apis_io: https://apis.io/providers/pandascore/
+context: gaming
+generated: '2026-11-11'
+concepts:
+  player_profile:
+    path_segment:
+    - players
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/pandascore-openapi.yml#GET /players

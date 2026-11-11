@@ -1,0 +1,18 @@
+provider: nakama
+apis_io: https://apis.io/providers/nakama/
+context: gaming
+generated: '2026-11-11'
+concepts:
+  leaderboard:
+    path_segment:
+    - leaderboard
+    properties:
+      id: leaderboard_id
+      rank: rank
+      created_at: create_time
+      score: score
+      updated_at: update_time
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/nakama-openapi.yml#GET /v2/leaderboard/{leaderboard_id}
+    - openapi/_original/nakama-openapi.yml#POST /v2/leaderboard/{leaderboard_id}

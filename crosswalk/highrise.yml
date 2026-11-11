@@ -1,0 +1,14 @@
+provider: highrise
+apis_io: https://apis.io/providers/highrise/
+context: gaming
+generated: '2026-11-11'
+concepts:
+  leaderboard:
+    path_segment:
+    - leaderboard
+    properties:
+      rank: rank
+      name: name
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/highrise-openapi.json#GET /api/leaderboard

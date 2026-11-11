@@ -1,0 +1,14 @@
+provider: lucra-sports
+apis_io: https://apis.io/providers/lucra-sports/
+context: gaming
+generated: '2026-11-11'
+concepts:
+  leaderboard:
+    path_segment:
+    - leaderboard
+    properties:
+      rank: position
+      score: score
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/lucra-sports-forge-openapi.json#GET /api/tournaments/{id}/leaderboard

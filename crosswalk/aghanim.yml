@@ -1,0 +1,43 @@
+provider: aghanim
+apis_io: https://apis.io/providers/aghanim/
+context: gaming
+generated: '2026-11-11'
+concepts:
+  player_profile:
+    path_segment:
+    - players
+    properties:
+      id: id
+      player_id: player_id
+      name: name
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/aghanim-openapi-original.json#GET /v1/players/{player_id}
+    - openapi/_original/aghanim-openapi-original.json#POST /v1/players/{player_id}
+  leaderboard:
+    path_segment:
+    - leaderboards
+    properties:
+      id: id
+      name: name
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/aghanim-openapi-original.json#DELETE /v1/leaderboards/{leaderboard_id}
+    - openapi/_original/aghanim-openapi-original.json#GET /v1/leaderboards
+    - openapi/_original/aghanim-openapi-original.json#GET /v1/leaderboards/{leaderboard_id}
+    - openapi/_original/aghanim-openapi-original.json#POST /v1/leaderboards
+    - openapi/_original/aghanim-openapi-original.json#PUT /v1/leaderboards/{leaderboard_id}
+  achievement:
+    path_segment:
+    - achievements
+    properties:
+      name: name
+      description: description
+      id: id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/aghanim-openapi-original.json#DELETE /v1/achievements/{achievement_id}
+    - openapi/_original/aghanim-openapi-original.json#GET /v1/achievements
+    - openapi/_original/aghanim-openapi-original.json#GET /v1/achievements/{achievement_id}
+    - openapi/_original/aghanim-openapi-original.json#PATCH /v1/achievements
+    - openapi/_original/aghanim-openapi-original.json#POST /v1/achievements

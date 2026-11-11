@@ -1,0 +1,26 @@
+provider: heroiclabs
+apis_io: https://apis.io/providers/heroiclabs/
+context: gaming
+generated: '2026-11-11'
+concepts:
+  leaderboard:
+    path_segment:
+    - leaderboard
+    properties:
+      id:
+      - id
+      - leaderboardId
+      rank: rank
+      created_at:
+      - create_time
+      - createTime
+      name: title
+      score: score
+      updated_at: updateTime
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/heroiclabs-nakama-console-api-openapi.yml#DELETE /v2/console/leaderboard/{id}
+    - openapi/_original/heroiclabs-nakama-console-api-openapi.yml#GET /v2/console/leaderboard
+    - openapi/_original/heroiclabs-nakama-console-api-openapi.yml#GET /v2/console/leaderboard/{id}
+    - openapi/_original/heroiclabs-nakama-console-openapi-original.json#DELETE /v2/console/leaderboard/{id}
+    - openapi/_original/heroiclabs-nakama-console-openapi-original.json#GET /v2/console/leaderboard

@@ -1,0 +1,39 @@
+provider: citoapi
+apis_io: https://apis.io/providers/citoapi/
+context: gaming
+generated: '2026-11-11'
+concepts:
+  game_title:
+    path_segment:
+    - games
+    - titles
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/citoapi-v1-openapi.json#GET /cs2/games/{gameId}
+    - openapi/_original/citoapi-v1-openapi.json#GET /cs2/matches/{matchId}/games
+    - openapi/_original/citoapi-v1-openapi.json#GET /raf/titles/{titleKey}
+  player_profile:
+    path_segment:
+    - players
+    properties:
+      id: id
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/citoapi-v1-openapi.json#GET /cod/players
+    - openapi/_original/citoapi-v1-openapi.json#GET /cod/players/{id}
+    - openapi/_original/citoapi-v1-openapi.json#GET /cs2/matches/{matchId}/players
+    - openapi/_original/citoapi-v1-openapi.json#GET /cs2/players
+    - openapi/_original/citoapi-v1-openapi.json#GET /cs2/players/{playerIdOrSlug}
+  leaderboard:
+    path_segment:
+    - rankings
+    - leaderboards
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/citoapi-v1-openapi.json#GET /bkfc/rankings
+    - openapi/_original/citoapi-v1-openapi.json#GET /bkfc/rankings/{division}
+    - openapi/_original/citoapi-v1-openapi.json#GET /cs2/leaderboards/{metric}
+    - openapi/_original/citoapi-v1-openapi.json#GET /cs2/rankings
+    - openapi/_original/citoapi-v1-openapi.json#GET /cs2/teams/rankings

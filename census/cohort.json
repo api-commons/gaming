@@ -1,0 +1,516 @@
+[
+ {
+  "slug": "accelbyte",
+  "specs": [
+   "openapi/_original/accelbyte-openapi.yml"
+  ]
+ },
+ {
+  "slug": "aghanim",
+  "specs": [
+   "openapi/_original/aghanim-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "amazon-gamelift",
+  "specs": [
+   "openapi/_original/amazon-gamelift-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "amiibo",
+  "specs": [
+   "openapi/_original/amiibo-openapi.yml"
+  ]
+ },
+ {
+  "slug": "appcharge",
+  "specs": [
+   "openapi/_original/appcharge-openapi.yml"
+  ]
+ },
+ {
+  "slug": "b3",
+  "specs": [
+   "openapi/_original/b3-b3os-workflow-openapi.json",
+   "openapi/_original/b3-b3os-workflow-openapi_2.json",
+   "openapi/_original/b3-data-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "beamable",
+  "specs": [
+   "openapi/_original/beamable-leaderboards-openapi.yml",
+   "openapi/_original/beamable-live-events-openapi.yml",
+   "openapi/_original/beamable-microservices-openapi.yml",
+   "openapi/_original/beamable-player-accounts-openapi.yml"
+  ]
+ },
+ {
+  "slug": "blizzard-entertainment",
+  "specs": [
+   "openapi/_original/blizzard-diablo-iii-openapi.yml",
+   "openapi/_original/blizzard-hearthstone-openapi.yml",
+   "openapi/_original/blizzard-oauth-openapi.yml",
+   "openapi/_original/blizzard-starcraft-ii-openapi.yml",
+   "openapi/_original/blizzard-world-of-warcraft-openapi.yml"
+  ]
+ },
+ {
+  "slug": "blockade-games",
+  "specs": [
+   "openapi/_original/blockade-games-skybox-openapi.yml"
+  ]
+ },
+ {
+  "slug": "blocklottos-com",
+  "specs": [
+   "openapi/_original/blocklottos-com-openapi.json",
+   "openapi/_original/blocklottos-com-openapi.yml"
+  ]
+ },
+ {
+  "slug": "carry1st",
+  "specs": [
+   "openapi/_original/carry1st-pay1st-gateway-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ccp-games",
+  "specs": [
+   "openapi/_original/ccp-games-esi-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "chess-com",
+  "specs": [
+   "openapi/_original/chess-com-published-data-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "citoapi",
+  "specs": [
+   "openapi/_original/citoapi-v1-openapi.json"
+  ]
+ },
+ {
+  "slug": "crob-at",
+  "specs": [
+   "openapi/_original/crob-at-openapi.json"
+  ]
+ },
+ {
+  "slug": "curse",
+  "specs": [
+   "openapi/_original/curse-openapi.json"
+  ]
+ },
+ {
+  "slug": "discord",
+  "specs": [
+   "openapi/_original/discord-openapi.json"
+  ]
+ },
+ {
+  "slug": "dmarket",
+  "specs": [
+   "openapi/_original/dmarket-trading-openapi.yml"
+  ]
+ },
+ {
+  "slug": "edgegap",
+  "specs": [
+   "openapi/_original/edgegap-openapi.json"
+  ]
+ },
+ {
+  "slug": "epic-games",
+  "specs": [
+   "openapi/_original/epic-games-openapi.yml"
+  ]
+ },
+ {
+  "slug": "eve-online",
+  "specs": [
+   "openapi/_original/eve-online-openapi.yml",
+   "openapi/_original/swagger.json",
+   "openapi/_original/swagger_2.json",
+   "openapi/_original/swagger_3.json",
+   "openapi/_original/swagger_4.json",
+   "openapi/_original/swagger_5.json",
+   "openapi/_original/swagger_6.json"
+  ]
+ },
+ {
+  "slug": "freetogame",
+  "specs": [
+   "openapi/_original/freetogame-openapi.yml"
+  ]
+ },
+ {
+  "slug": "gala-games",
+  "specs": [
+   "openapi/_original/gala-games-block-explorer-openapi.json",
+   "openapi/_original/gala-games-defi-backend-openapi.json",
+   "openapi/_original/gala-games-galachain-asset-dexv3-contract-openapi.json",
+   "openapi/_original/gala-games-galachain-asset-fee-contract-openapi.json",
+   "openapi/_original/gala-games-galachain-asset-launchpad-contract-openapi.json",
+   "openapi/_original/gala-games-galachain-asset-public-key-contract-openapi.json",
+   "openapi/_original/gala-games-galachain-asset-token-contract-openapi.json",
+   "openapi/_original/gala-games-galaconnect-openapi.json"
+  ]
+ },
+ {
+  "slug": "gameanalytics",
+  "specs": [
+   "openapi/_original/gameanalytics-openapi.yml"
+  ]
+ },
+ {
+  "slug": "gameflip",
+  "specs": [
+   "openapi/_original/gameflip-gfapi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "gamesight",
+  "specs": [
+   "openapi/_original/gamesight-measurement-openapi.json",
+   "openapi/_original/gamesight-reporting-openapi.json"
+  ]
+ },
+ {
+  "slug": "gameye",
+  "specs": [
+   "openapi/_original/gameye-openapi.yml"
+  ]
+ },
+ {
+  "slug": "giantbomb",
+  "specs": [
+   "openapi/_original/openapi.json"
+  ]
+ },
+ {
+  "slug": "gzw-data",
+  "specs": [
+   "openapi/_original/gzw-data-openapi.json"
+  ]
+ },
+ {
+  "slug": "hathora",
+  "specs": [
+   "openapi/_original/hathora-openapi.yml"
+  ]
+ },
+ {
+  "slug": "helika",
+  "specs": [
+   "openapi/_original/helika-events-openapi.json"
+  ]
+ },
+ {
+  "slug": "heroiclabs",
+  "specs": [
+   "openapi/_original/heroiclabs-hiro-rpc-api-openapi.yml",
+   "openapi/_original/heroiclabs-nakama-console-api-openapi.yml",
+   "openapi/_original/heroiclabs-nakama-console-openapi-original.json",
+   "openapi/_original/heroiclabs-nakama-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "highrise",
+  "specs": [
+   "openapi/_original/highrise-openapi.json"
+  ]
+ },
+ {
+  "slug": "horizon-blockchain-games",
+  "specs": [
+   "openapi/_original/horizon-blockchain-games-analytics-openapi-original.json",
+   "openapi/_original/horizon-blockchain-games-builder-openapi-original.json",
+   "openapi/_original/horizon-blockchain-games-indexer-openapi-original.json",
+   "openapi/_original/horizon-blockchain-games-infrastructure-openapi-original.json",
+   "openapi/_original/horizon-blockchain-games-marketplace-openapi-original.json",
+   "openapi/_original/horizon-blockchain-games-metadata-openapi-original.json",
+   "openapi/_original/horizon-blockchain-games-transactions-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "hypixel",
+  "specs": [
+   "openapi/_original/hypixel-public-api-openapi.json",
+   "openapi/_original/hypixel-public-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "igdb",
+  "specs": [
+   "openapi/_original/igdb-openapi.yml"
+  ]
+ },
+ {
+  "slug": "immutable",
+  "specs": [
+   "openapi/_original/immutable-audience-openapi.json",
+   "openapi/_original/immutable-zkevm-openapi.json"
+  ]
+ },
+ {
+  "slug": "kaedim",
+  "specs": [
+   "openapi/_original/kaedim-web-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "kongregate",
+  "specs": [
+   "openapi/_original/kongregate-server-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "loot-rush-games",
+  "specs": [
+   "openapi/_original/loot-rush-games-partner-openapi.json"
+  ]
+ },
+ {
+  "slug": "lootrush",
+  "specs": [
+   "openapi/_original/lootrush-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "lucra-sports",
+  "specs": [
+   "openapi/_original/lucra-sports-forge-openapi.json"
+  ]
+ },
+ {
+  "slug": "ludo-ai",
+  "specs": [
+   "openapi/_original/ludo-ai-openapi.json",
+   "openapi/_original/ludo-ai-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "nakama",
+  "specs": [
+   "openapi/_original/nakama-openapi.yml"
+  ]
+ },
+ {
+  "slug": "neon-commerce",
+  "specs": [
+   "openapi/_original/neon-commerce-account-openapi.yml",
+   "openapi/_original/neon-commerce-assets-openapi.yml",
+   "openapi/_original/neon-commerce-auth-openapi.yml",
+   "openapi/_original/neon-commerce-checkout-openapi.yml",
+   "openapi/_original/neon-commerce-payout-openapi.yml",
+   "openapi/_original/neon-commerce-purchase-openapi.yml",
+   "openapi/_original/neon-commerce-reports-openapi.yml",
+   "openapi/_original/neon-commerce-status-openapi.yml",
+   "openapi/_original/neon-commerce-storefront-openapi.yml",
+   "openapi/_original/neon-commerce-subscriptions-openapi.yml"
+  ]
+ },
+ {
+  "slug": "newminecraftservers",
+  "specs": [
+   "openapi/_original/newminecraftservers-openapi.json",
+   "openapi/_original/newminecraftservers-openapi.yml"
+  ]
+ },
+ {
+  "slug": "open-poker",
+  "specs": [
+   "openapi/_original/open-poker-openapi.json"
+  ]
+ },
+ {
+  "slug": "pandascore",
+  "specs": [
+   "openapi/_original/pandascore-openapi.yml"
+  ]
+ },
+ {
+  "slug": "photonengine",
+  "specs": [
+   "openapi/_original/photonengine-openapi.yml"
+  ]
+ },
+ {
+  "slug": "playfab",
+  "specs": [
+   "openapi/_original/playfab-openapi.yml"
+  ]
+ },
+ {
+  "slug": "pokeapi",
+  "specs": [
+   "openapi/_original/pokeapi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "pokemon-tcg",
+  "specs": [
+   "openapi/_original/pokemon-tcg-openapi.yml"
+  ]
+ },
+ {
+  "slug": "proof-of-play",
+  "specs": [
+   "openapi/_original/proof-of-play-vrf-openapi.json"
+  ]
+ },
+ {
+  "slug": "rawg",
+  "specs": [
+   "openapi/_original/rawg-openapi.json",
+   "openapi/_original/rawg-openapi.yml"
+  ]
+ },
+ {
+  "slug": "riot-games",
+  "specs": [
+   "openapi/_original/riot-games-league-of-legends-openapi.yml"
+  ]
+ },
+ {
+  "slug": "roblox-engine-api",
+  "specs": [
+   "openapi/_original/roblox-open-cloud-openapi.yml"
+  ]
+ },
+ {
+  "slug": "scryfall",
+  "specs": [
+   "openapi/_original/scryfall-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sequence",
+  "specs": [
+   "openapi/_original/sequence-analytics.json",
+   "openapi/_original/sequence-builder.json",
+   "openapi/_original/sequence-indexer.json",
+   "openapi/_original/sequence-infrastructure.json",
+   "openapi/_original/sequence-marketplace.json",
+   "openapi/_original/sequence-metadata.json",
+   "openapi/_original/sequence-transactions.json"
+  ]
+ },
+ {
+  "slug": "sidequest",
+  "specs": [
+   "openapi/_original/sidequest-openapi.json"
+  ]
+ },
+ {
+  "slug": "skinory",
+  "specs": [
+   "openapi/_original/skinory-openapi.json"
+  ]
+ },
+ {
+  "slug": "splitgate",
+  "specs": [
+   "openapi/_original/splitgate-third-party-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "sportradar",
+  "specs": [
+   "openapi/_original/sportradar-push-feeds-openapi.yml",
+   "openapi/_original/sportradar-sports-data-openapi.yml"
+  ]
+ },
+ {
+  "slug": "steam",
+  "specs": [
+   "openapi/_original/steam-openapi.yml"
+  ]
+ },
+ {
+  "slug": "subspace",
+  "specs": [
+   "openapi/_original/subspace-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "thegamesdb",
+  "specs": [
+   "openapi/_original/thegamesdb-openapi.yaml",
+   "openapi/_original/thegamesdb-openapi.yml"
+  ]
+ },
+ {
+  "slug": "thesports",
+  "specs": [
+   "openapi/_original/thesports-football-openapi.yml"
+  ]
+ },
+ {
+  "slug": "toornament",
+  "specs": [
+   "openapi/_original/toornament-openapi.yml"
+  ]
+ },
+ {
+  "slug": "twitch",
+  "specs": [
+   "openapi/_original/twitch-drops-openapi.yml",
+   "openapi/_original/twitch-extensions-openapi.yml",
+   "openapi/_original/twitch-helix-openapi.yml",
+   "openapi/_original/twitch-igdb-openapi.yml",
+   "openapi/_original/twitch-insights-analytics-openapi.yml",
+   "openapi/_original/twitch-video-broadcast-openapi.yml"
+  ]
+ },
+ {
+  "slug": "unity",
+  "specs": [
+   "openapi/_original/unity-analytics-openapi.yml",
+   "openapi/_original/unity-build-automation-openapi.yml",
+   "openapi/_original/unity-cloud-code-openapi.yml",
+   "openapi/_original/unity-cloud-save-openapi.yml",
+   "openapi/_original/unity-economy-openapi.yml",
+   "openapi/_original/unity-friends-openapi.yml",
+   "openapi/_original/unity-leaderboards-openapi.yml",
+   "openapi/_original/unity-lobby-openapi.yml",
+   "openapi/_original/unity-matchmaker-openapi.yml",
+   "openapi/_original/unity-multiplay-openapi.yml",
+   "openapi/_original/unity-player-authentication-openapi.yml",
+   "openapi/_original/unity-remote-config-openapi.yml"
+  ]
+ },
+ {
+  "slug": "upland",
+  "specs": [
+   "openapi/_original/upland-appchain-history-swagger.json",
+   "openapi/_original/upland-appchain-hyperion-swagger.json",
+   "openapi/_original/upland-developers-api-openapi.json",
+   "openapi/_original/upland-developers-api-sandbox-openapi.json",
+   "openapi/_original/upland-developers-api-sandbox-openapi_2.json"
+  ]
+ },
+ {
+  "slug": "versusgame",
+  "specs": [
+   "openapi/_original/versusgame-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "voidpet",
+  "specs": [
+   "openapi/_original/voidpet-discovery-openapi.json",
+   "openapi/_original/voidpet-openapi.json"
+  ]
+ },
+ {
+  "slug": "z-league",
+  "specs": [
+   "openapi/_original/z-league-crm-lead-openapi.json"
+  ]
+ }
+]

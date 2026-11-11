@@ -1,0 +1,39 @@
+provider: hypixel
+apis_io: https://apis.io/providers/hypixel/
+context: gaming
+generated: '2026-11-11'
+concepts:
+  game_title:
+    path_segment:
+    - games
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/hypixel-public-api-openapi.json#GET /v2/resources/games
+    - openapi/_original/hypixel-public-api-openapi.yml#GET /v2/resources/games
+  player_profile:
+    path_segment:
+    - player
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/hypixel-public-api-openapi.json#GET /v2/player
+    - openapi/_original/hypixel-public-api-openapi.yml#GET /v2/player
+  leaderboard:
+    path_segment:
+    - leaderboards
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/hypixel-public-api-openapi.json#GET /v2/leaderboards
+    - openapi/_original/hypixel-public-api-openapi.yml#GET /v2/leaderboards
+  achievement:
+    path_segment:
+    - achievements
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/hypixel-public-api-openapi.json#GET /v2/resources/achievements
+    - openapi/_original/hypixel-public-api-openapi.json#GET /v2/resources/guilds/achievements
+    - openapi/_original/hypixel-public-api-openapi.yml#GET /v2/resources/achievements
+    - openapi/_original/hypixel-public-api-openapi.yml#GET /v2/resources/guilds/achievements

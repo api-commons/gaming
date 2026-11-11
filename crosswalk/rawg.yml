@@ -1,0 +1,33 @@
+provider: rawg
+apis_io: https://apis.io/providers/rawg/
+context: gaming
+generated: '2026-11-11'
+concepts:
+  game_title:
+    path_segment:
+    - games
+    properties:
+      name: name
+      id: id
+      platforms: platforms
+      release_date: released
+      slug: slug
+      rating: rating
+      updated_at: updated
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/rawg-openapi.json#GET /games
+    - openapi/_original/rawg-openapi.json#GET /games/{id}
+    - openapi/_original/rawg-openapi.yml#GET /games
+    - openapi/_original/rawg-openapi.yml#GET /games/{id}
+  achievement:
+    path_segment:
+    - achievements
+    properties:
+      name: name
+      description: description
+      id: id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/rawg-openapi.json#GET /games/{id}/achievements
+    - openapi/_original/rawg-openapi.yml#GET /games/{id}/achievements

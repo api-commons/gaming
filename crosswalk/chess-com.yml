@@ -1,0 +1,35 @@
+provider: chess-com
+apis_io: https://apis.io/providers/chess-com/
+context: gaming
+generated: '2026-11-11'
+concepts:
+  game_title:
+    path_segment:
+    - games
+    properties:
+      url: url
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/chess-com-published-data-api-openapi.yml#GET /player/{username}/games
+  player_profile:
+    path_segment:
+    - player
+    - players
+    properties:
+      id: '@id'
+      player_id: player_id
+      name:
+      - title
+      - name
+      username: username
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/chess-com-published-data-api-openapi.yml#GET /country/{iso}/players
+    - openapi/_original/chess-com-published-data-api-openapi.yml#GET /player/{username}
+  leaderboard:
+    path_segment:
+    - leaderboards
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/chess-com-published-data-api-openapi.yml#GET /leaderboards

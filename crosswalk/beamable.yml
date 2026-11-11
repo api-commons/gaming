@@ -1,0 +1,16 @@
+provider: beamable
+apis_io: https://apis.io/providers/beamable/
+context: gaming
+generated: '2026-11-11'
+concepts:
+  game_title:
+    path_segment:
+    - game
+    - games
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/beamable-leaderboards-openapi.yml#GET /basic/realms/game
+    - openapi/_original/beamable-leaderboards-openapi.yml#GET /basic/realms/games
+    - openapi/_original/beamable-leaderboards-openapi.yml#POST /basic/realms/game
+    - openapi/_original/beamable-leaderboards-openapi.yml#PUT /basic/realms/game

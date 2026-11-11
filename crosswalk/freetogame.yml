@@ -1,0 +1,20 @@
+provider: freetogame
+apis_io: https://apis.io/providers/freetogame/
+context: gaming
+generated: '2026-11-11'
+concepts:
+  game_title:
+    path_segment:
+    - games
+    - game
+    properties:
+      name: title
+      id: id
+      platforms: platform
+      release_date: release_date
+      status: status
+      genres: genre
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/freetogame-openapi.yml#GET /game
+    - openapi/_original/freetogame-openapi.yml#GET /games
